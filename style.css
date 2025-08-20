@@ -1,18 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 :root {
-    --branco: white; 
-    --cor-de-fundo: #404e43b5;
-    --fundo-senha: #40996b; 
-    --fundo-texto: #266247; 
+    --branco: #fff; 
+    --cor-de-fundo: #4a5f55;  /* Fundo mais suave */
+    --fundo-senha: #5a8d6b;  /* Cor mais clara para o fundo da senha */
+    --fundo-texto: #2c6b53;  /* Cor mais intensa para botões e interações */
     --borda: #ffffff;
-    --fonte-principal: 'Bebas Neue', sans-serif;
+    --fonte-principal: 'Roboto', sans-serif; /* Usando uma fonte mais clean e moderna */
+    --fonte-secundaria: 'Bebas Neue', sans-serif;
+    --sombra-botao: rgba(0, 0, 0, 0.2);
 }
 
 body {
     background-color: var(--cor-de-fundo);
     color: var(--branco);
-    font-family: var(--fonte-principal), sans-serif; /* Fonte principal */
+    font-family: var(--fonte-principal), sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -20,84 +22,93 @@ body {
 
 .conteudo-titulo {
     text-align: center;
-    padding: 20px;
+    padding: 30px;
+    color: var(--branco);
 }
 
 .conteudo-titulo img {
-    width: 60px;  /* Reduzindo o tamanho do ícone do cadeado */
+    width: 70px; /* Ajustando o tamanho da imagem */
     height: auto;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Adicionando sombra suave ao ícone */
 }
 
 h2.titulo-principal {
-    font-size: 2rem; /* Ajustando o tamanho do título principal */
-    margin-bottom: 8px;
+    font-size: 2.2rem;
+    font-family: var(--fonte-secundaria);
+    margin-bottom: 10px;
 }
 
 h3.titulo-secundario {
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 300;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .conteudo-senha {
-    margin-top: 20px;
+    margin-top: 30px;
     background-color: var(--fundo-senha);
-    padding: 24px;
+    padding: 30px;
     border-bottom: 6px solid var(--borda);
-    border-radius: 10px;
+    border-radius: 12px;
     width: 80%;
-    max-width: 500px;
+    max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra suave para profundidade */
 }
 
 label {
     font-size: 1rem;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     display: block;
 }
 
-input[type="text"] {
+input[type="text"], input[type="number"], input[type="checkbox"] {
     width: 100%;
     padding: 12px;
     margin: 10px 0;
-    border: none;
     border-radius: 8px;
+    border: 2px solid #ddd;
     font-size: 1rem;
+    background-color: #f7f7f7; /* Fundo suave para os inputs */
+    transition: all 0.3s;
 }
 
-input[type="number"], input[type="checkbox"] {
-    margin: 5px 0;
-}
-
-.parametro-senha {
-    margin-bottom: 15px;
+input[type="text"]:focus, input[type="number"]:focus {
+    border-color: var(--fundo-texto);
+    box-shadow: 0 0 5px var(--fundo-texto);
 }
 
 button {
     background-color: var(--fundo-texto);
     color: var(--branco);
     border: none;
-    padding: 12px 20px;
+    padding: 14px 24px;
     font-size: 1.1rem;
     border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    box-shadow: var(--sombra-botao);
+    transition: background-color 0.3s ease, transform 0.2s ease;
     display: block;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 button:hover {
-    background-color: #2f5a47;
+    background-color: #248150; /* Cor mais escura para o botão */
+    transform: translateY(-2px); /* Efeito de elevação */
+}
+
+button:active {
+    transform: translateY(1px); /* Leve efeito de "pressionamento" */
 }
 
 /* Ajustes de Responsividade */
 @media (max-width: 768px) {
     .conteudo-senha {
         width: 90%;
-        padding: 16px;
+        padding: 20px;
     }
 
     h2.titulo-principal {
@@ -108,19 +119,14 @@ button:hover {
         font-size: 0.9rem;
     }
 
-    input[type="text"], input[type="number"] {
+    input[type="text"], input[type="number"], button {
         font-size: 0.9rem;
-    }
-
-    button {
-        padding: 10px;
-        font-size: 1rem;
     }
 }
 
 @media (max-width: 480px) {
     .conteudo-titulo img {
-        width: 50px; /* Diminuindo ainda mais o tamanho do cadeado em telas pequenas */
+        width: 50px; /* Ícone ainda menor em telas pequenas */
     }
 
     h2.titulo-principal {
@@ -132,7 +138,7 @@ button:hover {
     }
 
     button {
-        font-size: 0.9rem;
         padding: 10px 15px;
+        font-size: 0.9rem;
     }
 }
