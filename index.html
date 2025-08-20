@@ -1,30 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRIE SUA SENHA </title>
+    <title>Gerador de Senha</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <section class="conteudo">
     <div class="conteudo-titulo">
-      <img src="./image.png" alt="cadeado">
-      <h2 class="titulo-principal">Gerador de senhas</h2>
-      <h3 class="titulo-secundario">Gere instantaneamente uma senha aleatoria e segura.</h3>
+      <img src="./image.png" alt="Cadeado">
+      <h2 class="titulo-principal">Gerador de Senhas</h2>
+      <h3 class="titulo-secundario">Gere instantaneamente uma senha aleatória e segura.</h3>
     </div>
-    <div class="conteudoi-senha">
-    <label for="senha">Senha</label>
-    <input name="senha" type="text" id="campo-senha" readonly>
+    
+    <div class="conteudo-senha">
+      <label for="campo-senha">Senha Gerada</label>
+      <input type="text" id="campo-senha" name="senha" readonly>
     </div>
+    
     <div class="parametro">
-            <h3 class="parametro-titulo">Personalize sua senha</h3>
-            <div class="parametro-coluna-senha">
-                <div class="parametro-senha">
-                    <h4 class="parametro-senha-titulo">Número de caracteres</h4>
-                </div>
-            </div>
+      <h3 class="parametro-titulo">Personalize sua senha</h3>
+      <div class="parametro-coluna-senha">
+        
+        <div class="parametro-senha">
+          <h4 class="parametro-senha-titulo">Número de Caracteres</h4>
+          <input type="number" id="numero-caracteres" name="numero-caracteres" min="6" max="20" value="12">
         </div>
-    </section>
+
+        <div class="parametro-senha">
+          <label for="caracteres-especiais">Incluir Caracteres Especiais?</label>
+          <input type="checkbox" id="caracteres-especiais" name="caracteres-especiais">
+        </div>
+    
+        <div class="parametro-senha">
+          <label for="incluir-numeros">Incluir Números?</label>
+          <input type="checkbox" id="incluir-numeros" name="incluir-numeros">
+        </div>
+
+        <div class="parametro-senha">
+          <label for="incluir-maiusculas">Incluir Letras Maiúsculas?</label>
+          <input type="checkbox" id="incluir-maiusculas" name="incluir-maiusculas">
+        </div>
+
+      </div>
+    </div>
+
+    <button id="gerar-senha" class="botao-gerar">Gerar Senha</button>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
