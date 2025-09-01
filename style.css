@@ -11,120 +11,57 @@
     --fonte-secundaria: 'Manufacturing', monospace;
 }
 
-body {
+}
+body{
     background-color: var(--cor-de-fundo);
     color: var(--branco);
-    font-family: var(--fonte-principal), sans-serif;
-    margin: 0;
-    padding: 0;
 }
-
-.conteudo-titulo {
+.conteudo-titulo{
     text-align: center;
-    padding: 40px 20px;
 }
-
-.conteudo-titulo img {
-    width: 70px; /* Ajustando o tamanho da imagem */
-    height: auto;
-    margin-bottom: 20px;
+*{
+    font-weight: 400;
 }
-
-h2.titulo-principal {
-    font-size: 2.5rem;
-    color: var(--branco);
-}
-
-h3.titulo-secundario {
-    font-family: var(--fonte-secundaria);
-    font-size: 1.2rem;
-    color: var(--branco);
-    margin-bottom: 25px;
-}
-
-.conteudo-senha {
-    margin-top: 30px;
+.conteudo-senha{
+    margin-top: 80px;
     background-color: var(--fundo-senha);
-    padding: 30px;
+    padding: 24px;
     border-bottom: 6px solid var(--borda);
-    border-radius: 12px;
-    width: 80%;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra suave para a área de senha */
 }
-
-#campo-senha {
+#campo-senha{
     background-color: var(--fundo-senha);
     border: none;
     color: var(--branco);
     font-family: var(--fonte-principal);
     font-size: 40px;
     width: 70%;
-    outline: none;
-    text-align: center;
 }
-
-.parametro {
+.titulo-principal{
+    font-family: var(--fonte-principal);
+    font-size: 32px;
+}
+.titulo-secundario{
+    font-size: 24px;
+}
+img{
+    width: 4%;
+    height: 4%;
+}
+#campo-senha:focus{
+    outline: none;
+}
+.parametro{
     background-color: var(--fundo-texto);
     border: 2px solid var(--branco);
-    margin-top: 30px;
+    margin-top: 32px;
     padding: 24px;
-    border-radius: 8px;
 }
-
-.parametro-titulo {
+.parametro-titulo{
     font-family: var(--fonte-principal);
-    font-size: 1.8rem;
-    color: var(--preto);
+    font-size: 28px;
 }
-
-.parametro-senha-titulo {
-    font-family: var(--fonte-secundaria);
-    font-size: 1.2rem;
-    color: var(--preto);
-}
-
-.parametro-coluna-senha {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-@media screen and (min-width: 768px) {
-    .parametro-coluna-senha {
-        flex-direction: row;
-    }
-}
-
-.parametro-senha {
-    width: 50%;
-    margin: 0 auto;
-}
-
-/* Estilo do botão */
-button {
-    background-color: var(--fundo-texto);
-    color: var(--branco);
-    border: none;
-    padding: 14px 24px;
-    font-size: 1.1rem;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
-    display: block;
-    width: 100%;
-    margin-top: 30px;
-}
-
-button:hover {
-    background-color: #1abc9c; /* Cor do botão mais vibrante ao passar o mouse */
-    transform: translateY(-2px); /* Efeito de elevação */
-}
-
-button:active {
-    transform: translateY(1px); /* Leve "pressionamento" do botão */
+.parametro-senha-titulo{
+    font-size: 24px;
 }
 .parametro-coluna-senha{
     display: flex;
@@ -157,6 +94,7 @@ label{
     font-size: 20px;
 }
 @media screen and (min-width: 768px) {
-    .botoes{
-        display: flex;
+    .parametro-coluna-senha{
+        flex-direction: row;
     }
+}
