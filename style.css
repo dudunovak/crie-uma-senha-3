@@ -97,3 +97,34 @@ label{
         flex-direction: row;
     }
 }
+.checkbox{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.barra{
+    background-color: var(--fundo-senha);
+    height: 30px;
+    width: 100%;
+}
+.fraca{
+    height: 30px;
+    width: 25%;
+    background-color: #e72121;
+    position: relative;
+    bottom: 30px;
+}
+.media{
+    height: 30px;
+    width: 50%;
+    background-color: #eaff00;
+    position: relative;
+    bottom: 30px;
+}
+.forte{
+    height: 30px;
+    width: 100%;
+    background-color: #b0b5794a;
+    position: relative;
+    bottom: 30px;
+}
