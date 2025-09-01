@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 :root {
-    --branco: white;
+    --branco: rgb(23, 30, 9);
     --cor-de-fundo: #3e9712; /* Fundo mais suave e escuro (cinza-escuro azulado) */
     --fundo-senha: #0d3c08; /* Verde água suave */
     --fundo-texto: #00bf49; /* Verde claro e vibrante para botões e interações */
