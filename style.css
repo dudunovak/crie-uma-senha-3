@@ -2,7 +2,7 @@
 
 :root {
     --branco: rgb(23, 30, 9);
-    --cor-de-fundo: #112407; /* Fundo mais suave e escuro (cinza-escuro azulado) */
+    --cor-de-fundo: #83b668; /* Fundo mais suave e escuro (cinza-escuro azulado) */
     --fundo-senha: #0d3c08; /* Verde água suave */
     --fundo-texto: #00bf49; /* Verde claro e vibrante para botões e interações */
     --borda: #000000; /* Borda clara para contrastar com o fundo */
