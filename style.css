@@ -5,7 +5,7 @@
     --cor-de-fundo: #3e9712; /* Fundo mais suave e escuro (cinza-escuro azulado) */
     --fundo-senha: #0d3c08; /* Verde água suave */
     --fundo-texto: #00bf49; /* Verde claro e vibrante para botões e interações */
-    --borda: #ecf0f1; /* Borda clara para contrastar com o fundo */
+    --borda: #000000; /* Borda clara para contrastar com o fundo */
     --preto: #000000; /* Preto suave */
     --fonte-principal: 'Luckiest Guy', monospace;
     --fonte-secundaria: 'Manufacturing', monospace;
