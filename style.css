@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 :root {
-    --branco: rgb(23, 30, 9);
-    --cor-de-fundo: #83b668; /* Fundo mais suave e escuro (cinza-escuro azulado) */
-    --fundo-senha: #0d3c08; /* Verde água suave */
-    --fundo-texto: #00bf49; /* Verde claro e vibrante para botões e interações */
+    --branco: rgb(14, 10, 47);
+    --cor-de-fundo: #6378cb; /* Fundo mais suave e escuro (cinza-escuro azulado) */
+    --fundo-senha: #263a8b; /* Verde água suave */
+    --fundo-texto: #372e9e; /* Verde claro e vibrante para botões e interações */
     --borda: #000000; /* Borda clara para contrastar com o fundo */
     --preto: #000000; /* Preto suave */
     --fonte-principal: 'Luckiest Guy', monospace;
