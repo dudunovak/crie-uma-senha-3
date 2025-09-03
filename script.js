@@ -20,4 +20,5 @@ function aumentaTamanho(){
     numeroSenha.textContent = tamanhoSenha;
     geraSenha();
 }
+const campoSenha = document.querySelector
 
